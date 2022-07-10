@@ -35,5 +35,19 @@ int print_s(va_list s)
 		_putchar(st[i]);
 		i++;
 	}
-	return(i);
+	return (i);
+}
+
+/**
+ * print_per - a function that accounts for %% as an input
+ * @p: A parameter that stores a % and prints it
+ *
+ * Return: Always  1;
+ */
+int print_per(int p)
+{
+	p = '%';
+
+	_putchar(p);
+	return (1);
 }
