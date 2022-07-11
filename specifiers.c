@@ -4,7 +4,7 @@
 
 /**
  * print_c - Prints character
- * @c: Charater to print
+ * @cha: Charater to print
  *
  * Return: Always 1
  */
@@ -37,18 +37,3 @@ int print_s(va_list s)
 	}
 	return (i);
 }
-
-/**
- * print_per - a function that accounts for %% as an input
- * @p: A parameter that stores a % and prints it
- *
- * Return: Always  1;
- */
-/**
- * int print_per(va_list p)
- * {
- * p = '%';
- * _putchar(p);
- * return (1);
- * }
- */
