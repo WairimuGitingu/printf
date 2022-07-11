@@ -44,10 +44,11 @@ int print_s(va_list s)
  *
  * Return: Always  1;
  */
-int print_per(va_list p)
-{
-	p = '%';
-
-	_putchar(p);
-	return (1);
-}
+/**
+ * int print_per(va_list p)
+ * {
+ * p = '%';
+ * _putchar(p);
+ * return (1);
+ * }
+ */
