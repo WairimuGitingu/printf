@@ -10,7 +10,7 @@ typedef struct print_all
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_c(va_list c);
+int print_c(va_list cha);
 int print_s(va_list s);
 int print_per(va_list p);
 

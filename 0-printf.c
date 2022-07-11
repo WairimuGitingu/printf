@@ -12,7 +12,7 @@ static int (*specifiers_checker(const char *format))(va_list)
 {
 	unsigned int i;
 	print_all_t arr[] = {
-		{"c", print_c},
+		{"cha", print_c},
 		{"s", print_s},
 		/*{"p", print_per},*/
 		{NULL, NULL}

@@ -9,9 +9,9 @@
  * Return: Always 1
  */
 
-int print_c(va_list c)
+int print_c(va_list cha)
 {
-	char ch = (char)va_arg(c, int);
+	char ch = (char)va_arg(cha, int);
 
 	_putchar(ch);
 	return (1);
