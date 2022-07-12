@@ -15,7 +15,7 @@ int print_int(va_list d)
 	int arr[10];
 
 	if (n > 1000000000)
-		return (-1);
+		return (1);
 
 	if (n < 0)
 	{
