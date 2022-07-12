@@ -10,33 +10,35 @@
  */
 int print_int(va_list d)
 {
-	int n = va_arg(d, int);
-	int k = 0, j, mod = 0;
-	int arr[10];
+	int a[10];
+	int j, m, n, sum, count;
 
+	n = va_arg(d, int);
+	count = 0;
+	m = 1000000000;
+	a[0] = n / m;
+	for (j = 1; j < 10; j++)
+	{
+		m /= 10;
+		a[j] = (n / m) % 10;
+	}
 	if (n < 0)
 	{
-		n *= (-1);
 		_putchar('-');
+		count++;
+		for (j = 0; j < 10; j++)
+			a[j] *= -1;
 	}
-
-	if (n == 0)
+	for (j = 0, sum = 0; j < 10; j++)
 	{
-		_putchar('0');
-		return (1);
+		sum += a[j];
+		if (sum != 0 || j == 9)
+		{
+			_putchar('0' + a[j]);
+			count++;
+		}
 	}
-	while (n != 0)
-	{
-		mod = n % 10;
-		arr[k] =  mod;
-		n =  n / 10;
-		k++;
-	}
-	for (j = k - 1; j > -1; j--)
-	{
-		_putchar(arr[j] + '0');
-	}
-	return (k);
+	return (count);
 }
 /**
  * print_i - counts and prints all type int
@@ -47,6 +49,5 @@ int print_int(va_list d)
 
 int print_i(va_list i)
 {
-	
 	return (print_int(i));
 }
