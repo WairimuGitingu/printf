@@ -14,9 +14,6 @@ int print_int(va_list d)
 	int k = 0, j, mod = 0;
 	int arr[10];
 
-	if (n > 1000000000)
-		return (1);
-
 	if (n < 0)
 	{
 		n *= (-1);
