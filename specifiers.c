@@ -4,7 +4,7 @@
 
 /**
  * print_c - Prints character
- * @cha: Charater to print
+ * @c: Charater to print
  *
  * Return: Always 1
  */
