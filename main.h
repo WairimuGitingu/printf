@@ -17,6 +17,7 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int print_c(va_list cha);
 int print_s(va_list s);
+int print_int(va_list d);
 /*int print_per(va_list p);*/
 
 #endif
